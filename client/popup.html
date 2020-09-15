@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <title>MediVer</title>
+    <script src="popup.js"></script>
+    <style>
+      body {
+          min-width:400px;
+          font-size:12pt;
+          padding: 0;
+          margin: 0;
+      }
+
+      p img {
+        vertical-align: middle;
+      }
+
+      .imagehint {
+        clear: both;
+        height: 50px;
+      }
+      
+      .imagehint img {
+        float: left;
+        padding-right: 30px;
+      }
+
+      .pad {
+        padding:20px;
+      }
+
+      button {
+        border-radius: 12px;
+        padding: 8px;
+        margin-left: 8px;
+        margin-right: 8px;
+        background-image: linear-gradient(to bottom,rgba(96, 156, 208,1) 0%,rgba(32, 106, 170,1) 100%);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pad">
+      <h3>MediVer V1.2</h3>
+      <div class="imagehint">
+        <img src="chrome-extension://hfcjagajdhfccjmiffbeelbmopoepffa/images/good.png" width="64" height="64">
+        <p>This site is based on scientific research</p>
+      </div>
+      <div class="imagehint">
+        <img src="chrome-extension://hfcjagajdhfccjmiffbeelbmopoepffa/images/neutral.png" width="64" height="64">
+        <p>This subject is arguable, there is no consensus in the scientific community</p>
+      </div>
+      <div class="imagehint">
+        <img src="chrome-extension://hfcjagajdhfccjmiffbeelbmopoepffa/images/bad.png" width="64" height="64">
+        <p>This site does not rely on scientific research</p>
+      </div>
+    </div>
+    <div style="clear:both">&nbsp;</div>
+    <hr/>
+    <div class="pad">
+      <div style="text-align:center">
+        <button id="checkPage">Turn on/off</button>
+        <button id="checkPage">Information</button>
+        <button id="checkPage">Report inaccuracy</button>
+      </div>
+    </div>
+    <hr/>
+    <div class="pad">
+      <p style="text-align: justify;">
+        The site reliability is decided by the author, the subject and the researchers in this
+        field, this doesn't tell that the information is true, check your doctor for medical
+        advice.
+      </p>
+      </div>
+  </body>
+</html>

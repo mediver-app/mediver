@@ -1,0 +1,31 @@
+.mediverdiv {
+	flex: 0 0 180px;
+	padding: 2px;
+	margin: 20px;
+	font-size: 10pt;
+	display: flex;
+	align-items: center;
+}
+
+.mediverdiv img {
+	margin: 8px;
+}
+
+.mediver-tag-bad {
+	color: black;
+	background-color: #ffcc99;
+}
+
+.mediver-tag-neutral {
+	color: black;
+	background-color: #eeeeee;
+}
+
+.mediver-tag-good {
+	color: black;
+	background-color: #c4ffc4
+}
+
+.mediver-icon {
+	vertical-align: middle;
+}

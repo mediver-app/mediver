@@ -1,0 +1,39 @@
+{
+	"manifest_version": 2,
+	"name": "MediVer",
+	"description": "Student project",
+	"version": "1.0",
+	"options_page": "popup.html",
+	"minimum_chrome_version": "16.0.884",
+	"browser_action": {
+		"default_title": "Mediver",
+		"default_icon": "images/neutral.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [
+		{
+			"css": ["content.css"],
+			"js": ["content.js"],
+			"matches": ["https://www.google.com/*", "https://www.google.co.il/*"],
+			"run_at": "document_start"
+		},
+		{
+			"css": ["page-process.css"],
+			"js": ["page-process.js"],
+			"matches": ["*://*/*"]
+		}
+	],
+	"permissions": [
+		"activeTab",
+		"tabs",
+		"http://*/*",
+		"https://*/*"
+	],
+	"icons": {
+		"16": "icon.png"
+	},
+	"web_accessible_resources": [
+		"images/*.png",
+		"images/*.gif"
+	]
+}

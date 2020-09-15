@@ -1,0 +1,16 @@
+.mediver-bad-header {
+	position: absolute;
+	color: white;
+	background-color: red;
+	top:0;
+	height: 80px;
+	left:0;
+	right:0;
+	z-index: 200000;
+	border-bottom: 16px solid black;
+	text-align: center;
+}
+
+.mediver-bad-header img {
+	vertical-align: middle;
+}
